@@ -34,13 +34,18 @@ nav li {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: calc(1.5vmin + 5px);
   text-transform: uppercase;
 }
 
 nav a:hover {
   color: #e4c47c;
   transition: 0.3s color linear;
+}
+
+.nav-logo {
+  width: 25vmin;
+  height: 10vmin;
 }
 
 /* header text + paragraph styling */
@@ -216,4 +221,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+  }
 }
