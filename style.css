@@ -1,230 +1,293 @@
 /* overall page styling */
 :root {
-  --background: #cca4a6;
+	--background: #cca4a6;
 }
 body {
-  min-width: 1000px;
-  background-color: #f0f0f0;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  margin: 0;
+	min-width: 1000px;
+	background-color: #f0f0f0;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	margin: 0;
 }
 /* header and nav bar styling */
 header {
-  background: var(--background);
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  width: 100%;
+	background: var(--background);
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	height: 70px;
 }
 nav {
-  text-align: left;
-  background: var(--background);
-  display: flex;
-  justify-content: space-evenly;
+	text-align: left;
+	background: var(--background);
+	display: flex;
+	justify-content: space-evenly;
 }
 nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
+	list-style: none;
+	display: flex;
+	align-items: center;
 }
 nav li {
-  margin-left: 15px;
+	margin-left: 15px;
 }
 nav a {
-  color: white;
-  text-decoration: none;
-  font-size: calc(1.5vmin + 5px);
-  text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	font-size: calc(1.5vmin + 5px);
+	text-transform: uppercase;
 }
 
 nav a:hover {
-  color: #e4c47c;
-  transition: 0.3s color linear;
+	color: #e4c47c;
+	transition: 0.3s color linear;
 }
 
 .nav-logo {
-  width: 25vmin;
-  height: 10vmin;
+	width: 25vmin;
+	height: 10vmin;
 }
 
 /* header text + paragraph styling */
 h1 {
-  position: relative;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 30px;
-  text-align: center;
+	position: relative;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	text-align: center;
 }
-.text-block {
-  position: relative;
-  color: white;
-  background-color: #1b4040;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 30px;
-  width: 500px;
-  height: 300px;
-  text-align: center;
-  margin-top: 150px;
-  margin-right: auto;
-  margin-bottom: 300px;
-  margin-left: auto;
-  padding-top: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-  padding-left: 50px;
+
+.wrapper {
+	width: 100%;
+	max-width: 976px;
+	margin: 0 auto;
 }
+.flex-container-01 {
+	display: flex;
+	flex-wrap: wrap;
+	height: 321px;
+	margin-top: 110px;
+	margin-bottom: 48px;
+	background: #1b4040;
+}
+.flex-container-shop,
+.flex-container-subscribe,
+.flex-container-about,
+.flex-container-journal {
+	display: flex;
+	flex-wrap: wrap;
+	height: 321px;
+	margin-top: 24px;
+}
+.box {
+	flex-grow: 1;
+	min-width: 200px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+.one {
+	background: #1b4040;
+	opacity: 0.5;
+	flex-grow: 2;
+}
+
+.two {
+	background: #1b4040;
+	flex-grow: 1;
+}
+
+.three {
+	background: #1b4040;
+	opacity: 0.5;
+	flex-grow: 1;
+}
+
+.four {
+	background: #e4c47c;
+	opacity: 0.5;
+	flex-grow: 3;
+}
+
+.five {
+	background: #e4c47c;
+	flex-grow: 1;
+}
+.six {
+	background: #cca4a6;
+	opacity: 0.5;
+	flex-grow: 1;
+}
+.seven {
+	background: #cca4a6;
+	flex-grow: 1;
+}
+.eight {
+	background: #cca4a6;
+	opacity: 0.5;
+	flex-grow: 2;
+}
+.nine {
+	background: #647973;
+	flex-grow: 1;
+}
+.ten {
+	background: #647973;
+	opacity: 0.5;
+	flex-grow: 3;
+}
+
 h2 {
-  color: #1b4040;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  text-align: center;
-  padding-top: 10px;
-  padding-right: 200px;
-  padding-bottom: 0;
-  padding-left: 200px;
+	color: #1b4040;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 10px;
+	padding-right: 200px;
+	padding-bottom: 0;
+	padding-left: 200px;
 }
 h3 {
-  color: #1b4040;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  text-align: center;
-  padding-left: 150px;
-  padding-right: 150px;
+	color: #1b4040;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+	padding-left: 150px;
+	padding-right: 150px;
 }
 p {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  text-align: center;
-  padding-left: 200px;
-  padding-right: 200px;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+	padding-left: 200px;
+	padding-right: 200px;
 }
 
 /* form input styling */
 form {
-  height: 300px;
-  color: #1b4040;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+	height: 300px;
+	color: #1b4040;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	align-items: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 input {
-  resize: none;
-  overflow: auto;
-  height: 20px;
-  width: 400px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  border-radius: 2px;
-  border: none;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
+	resize: none;
+	overflow: auto;
+	height: 20px;
+	width: 400px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	border-radius: 2px;
+	border: none;
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
 }
 
 textarea {
-  width: 400px;
-  height: 50px;
-  resize: none;
-  overflow: auto;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  border-radius: 2px;
-  border: none;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
+	width: 400px;
+	height: 50px;
+	resize: none;
+	overflow: auto;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	border-radius: 2px;
+	border: none;
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
 }
 
 /* button styling */
 
 .button {
-  display: block;
-  width: 300px;
-  background-color: #1b4040;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  text-transform: uppercase;
-  text-align: center;
-  border: 2px solid #1b4040;
-  margin: auto;
-  padding: 10px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+	display: block;
+	width: 300px;
+	background-color: #1b4040;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	border: 2px solid #1b4040;
+	margin: auto;
+	padding: 10px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
 }
 
 .button:hover {
-  background-color: #f0f0f0;
-  color: #e4c47c;
-  border: 2px solid #e4c47c;
+	background-color: #f0f0f0;
+	color: #e4c47c;
+	border: 2px solid #e4c47c;
 }
 
 /* text link styling */
 
 .text-links {
-  color: #1b4040;
+	color: #1b4040;
 }
 .text-links:link {
-  color: #1b4040;
-  text-decoration: none;
+	color: #1b4040;
+	text-decoration: none;
 }
 
 .text-links:visited {
-  color: #e4c47c;
+	color: #e4c47c;
 }
 
 .text-links:hover {
-  color: #e4c47c;
-  text-decoration: underline;
+	color: #e4c47c;
+	text-decoration: underline;
 }
 
 /* image styling */
 .Home-image {
-  display: block;
-  position: absolute;
-  width: 400px;
-  left: 300px;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-bottom: 5px;
-  margin-left: auto;
+	display: block;
+	position: absolute;
+	width: 400px;
+	left: 300px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-left: auto;
 }
 
 /* footer styling */
 footer {
-  color: white;
-  width: 100%;
-  height: 50px;
-  background: var(--background);
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  z-index: 999;
+	color: white;
+	width: 100%;
+	height: 50px;
+	background: var(--background);
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	z-index: 999;
 }
 
 .site-footer {
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @media screen and (max-width: 480px) {
-  nav ul {
-    flex-direction: column;
-  }
+	nav ul {
+		flex-direction: column;
+	}
 }
