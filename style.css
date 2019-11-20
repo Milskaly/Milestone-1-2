@@ -3,7 +3,7 @@
 	--background: #cca4a6;
 }
 body {
-	min-width: 1000px;
+	min-width: 1024px;
 	background-color: #f0f0f0;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
@@ -22,7 +22,8 @@ nav {
 	text-align: left;
 	background: var(--background);
 	display: flex;
-	justify-content: space-evenly;
+  justify-content: space-evenly;
+  
 }
 nav ul {
 	list-style: none;
@@ -51,26 +52,29 @@ nav a:hover {
 
 /* header text + paragraph styling */
 h1 {
-	position: relative;
 	color: white;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	font-size: 30px;
 	text-align: center;
+	padding-top: 80px;
 }
 
 .wrapper {
 	width: 100%;
-	max-width: 976px;
+	max-width: 1024px;
 	margin: 0 auto;
 }
 .flex-container-01 {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: row;
 	height: 321px;
 	margin-top: 110px;
 	margin-bottom: 48px;
 	background: #1b4040;
+	padding-left: 80px;
+	padding-right: 80px;
 }
 .flex-container-shop,
 .flex-container-subscribe,
@@ -78,6 +82,8 @@ h1 {
 .flex-container-journal {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: row;
+	flex-flow: row wrap;
 	height: 321px;
 	margin-top: 24px;
 }
@@ -91,7 +97,7 @@ h1 {
 .one {
 	background: #1b4040;
 	opacity: 0.5;
-	flex-grow: 2;
+	flex-grow: 1;
 }
 
 .two {
@@ -108,7 +114,7 @@ h1 {
 .four {
 	background: #e4c47c;
 	opacity: 0.5;
-	flex-grow: 3;
+	flex-grow: 1;
 }
 
 .five {
@@ -127,7 +133,7 @@ h1 {
 .eight {
 	background: #cca4a6;
 	opacity: 0.5;
-	flex-grow: 2;
+	flex-grow: 1;
 }
 .nine {
 	background: #647973;
@@ -136,7 +142,7 @@ h1 {
 .ten {
 	background: #647973;
 	opacity: 0.5;
-	flex-grow: 3;
+	flex-grow: 1;
 }
 
 h2 {
@@ -286,8 +292,8 @@ footer {
 	justify-content: center;
 }
 
-@media screen and (max-width: 480px) {
-	nav ul {
+@media (max-width: 480px) {
+	.nav ul {
 		flex-direction: column;
 	}
 }
